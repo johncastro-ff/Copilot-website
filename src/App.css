@@ -1,0 +1,261 @@
+/**
+ * App.css - Styles for the Med Spa Homepage
+ * Light, modern color scheme with calming spa-like aesthetics
+ */
+
+/* Main app container */
+.app {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+/* ===== HERO SECTION ===== */
+/* Hero section with gradient background */
+.hero-section {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Main headline styling */
+.hero-title {
+  font-size: 3.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Subheadline text */
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #546e7a;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Call-to-action button */
+.cta-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 16px 48px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== ABOUT US SECTION ===== */
+.about-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* About description text */
+.about-description {
+  font-size: 1.1rem;
+  color: #546e7a;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Image placeholder styling */
+.about-image-placeholder {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #d4e7f5 0%, #e8d5f0 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-text {
+  color: #546e7a;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* ===== SERVICES SECTION ===== */
+.services-section {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+}
+
+/* Grid layout for service cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Individual service card */
+.service-card {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Service icon (emoji) */
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Service name/title */
+.service-name {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Service description text */
+.service-description {
+  font-size: 1rem;
+  color: #546e7a;
+  line-height: 1.6;
+}
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 50px 20px 20px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  text-align: left;
+}
+
+/* Footer section titles */
+.footer-title {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #e3f2fd;
+}
+
+/* Footer info text */
+.footer-info {
+  margin: 10px 0;
+  color: #b0bec5;
+  font-size: 1rem;
+}
+
+/* Social media links container */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Individual social link */
+.social-link {
+  color: #b0bec5;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #e3f2fd;
+}
+
+/* Footer bottom (copyright) */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #b0bec5;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 80px 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 14px 36px;
+    font-size: 1rem;
+  }
+}
